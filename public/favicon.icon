@@ -1,0 +1,663 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>var __ez=__ez||{};__ez.stms=Date.now();__ez.evt={};__ez.script={};__ez.ck=__ez.ck||{};__ez.template={};__ez.template.isOrig=true;__ez.queue=function(){var e=0,i=0,t=[],n=!1,s=[],r=[],o=!0,a=function(e,i,n,s,r,o,a){var l=this;this.name=e,this.funcName=i,this.parameters=null===n?null:n instanceof Array?n:[n],this.isBlock=s,this.blockedBy=r,this.deleteWhenComplete=o,this.isError=!1,this.isComplete=!1,this.isInitialized=!1,this.proceedIfError=a,this.isTimeDelay=!1,this.process=function(){u("... func = "+e),l.isInitialized=!0,l.isComplete=!0,u("... func.apply: "+e);var i=l.funcName.split("."),n=null;i.length>3||(n=3===i.length?window[i[0]][i[1]][i[2]]:2===i.length?window[i[0]][i[1]]:window[l.funcName]),null!=n&&n.apply(null,this.parameters),!0===l.deleteWhenComplete&&delete t[e],!0===l.isBlock&&(u("----- F'D: "+l.name),f())}},l=function(e,i,t,n,s,r,o){var a=this;this.name=e,this.path=i,this.async=s,this.defer=r,this.isBlock=t,this.blockedBy=n,this.isInitialized=!1,this.isError=!1,this.isComplete=!1,this.proceedIfError=o,this.isTimeDelay=!1,this.isPath=function(e){return"/"===e[0]&&"/"!==e[1]},this.getSrc=function(e){return void 0!==window.__ezScriptHost&&this.isPath(e)?window.__ezScriptHost+e:e},this.process=function(){a.isInitialized=!0,u("... file = "+e);var i=document.createElement("script");i.src=this.getSrc(this.path),!0===s?i.async=!0:!0===r&&(i.defer=!0),i.onerror=function(){u("----- ERR'D: "+a.name),a.isError=!0,!0===a.isBlock&&f()},i.onreadystatechange=i.onload=function(){var e=i.readyState;u("----- F'D: "+a.name),e&&!/loaded|complete/.test(e)||(a.isComplete=!0,!0===a.isBlock&&f())},document.getElementsByTagName("head")[0].appendChild(i)}},c=function(e,i){this.name=e,this.path="",this.async=!1,this.defer=!1,this.isBlock=!1,this.blockedBy=[],this.isInitialized=!0,this.isError=!1,this.isComplete=i,this.proceedIfError=!1,this.isTimeDelay=!1,this.process=function(){}};function d(e){!0!==h(e)&&0!=o&&e.process()}function h(e){if(!0===e.isTimeDelay&&!1===n)return u(e.name+" blocked = TIME DELAY!"),!0;if(e.blockedBy instanceof Array)for(var i=0;i<e.blockedBy.length;i++){var s=e.blockedBy[i];if(!1===t.hasOwnProperty(s))return u(e.name+" blocked = "+s),!0;if(!0===e.proceedIfError&&!0===t[s].isError)return!1;if(!1===t[s].isComplete)return u(e.name+" blocked = "+s),!0}return!1}function u(e){var i=window.location.href,t=new RegExp("[?&]ezq=([^&#]*)","i").exec(i);"1"===(t?t[1]:null)&&console.debug(e)}function f(){++e>200||(u("let's go"),m(s),m(r))}function m(e){for(var i in e)if(!1!==e.hasOwnProperty(i)){var t=e[i];!0===t.isComplete||h(t)||!0===t.isInitialized||!0===t.isError?!0===t.isError?u(t.name+": error"):!0===t.isComplete?u(t.name+": complete already"):!0===t.isInitialized&&u(t.name+": initialized already"):t.process()}}return window.addEventListener("load",(function(){setTimeout((function(){n=!0,u("TDELAY -----"),f()}),5e3)}),!1),{addFile:function(e,i,n,o,a,c,h,u){var f=new l(e,i,n,o,a,c,h);!0===u?s[e]=f:r[e]=f,t[e]=f,d(f)},addDelayFile:function(e,i){var n=new l(e,i,!1,[],!1,!1,!0);n.isTimeDelay=!0,u(e+" ...  FILE! TDELAY"),r[e]=n,t[e]=n,d(n)},addFunc:function(e,n,o,l,c,h,u,f,m){!0===h&&(e=e+"_"+i++);var p=new a(e,n,o,l,c,u,f);!0===m?s[e]=p:r[e]=p,t[e]=p,d(p)},addDelayFunc:function(e,i,n){var s=new a(e,i,n,!1,[],!0,!0);s.isTimeDelay=!0,u(e+" ...  FUNCTION! TDELAY"),r[e]=s,t[e]=s,d(s)},items:t,processAll:f,setallowLoad:function(e){o=e},markLoaded:function(e){if(e&&0!==e.length){if(e in t){var i=t[e];!0===i.isComplete?u(i.name+" "+e+": error loaded duplicate"):(i.isComplete=!0,i.isInitialized=!0)}else t[e]=new c(e,!0);u("markLoaded dummyfile: "+t[e].name)}},logWhatsBlocked:function(){for(var e in t)!1!==t.hasOwnProperty(e)&&h(t[e])}}}();__ez.evt.add=function(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n()},__ez.evt.remove=function(e,t,n){e.removeEventListener?e.removeEventListener(t,n,!1):e.detachEvent?e.detachEvent("on"+t,n):delete e["on"+t]};__ez.script.add=function(e){var t=document.createElement("script");t.src=e,t.async=!0,t.type="text/javascript",document.getElementsByTagName("head")[0].appendChild(t)};__ez.dot={};!function(){var e;__ez.vep=(e=[],{Add:function(i,t){__ez.dot.isDefined(i)&&__ez.dot.isValid(t)&&e.push({type:"video",video_impression_id:i,domain_id:__ez.dot.getDID(),t_epoch:__ez.dot.getEpoch(0),data:__ez.dot.dataToStr(t)})},Fire:function(){if(void 0===document.visibilityState||"prerender"!==document.visibilityState){if(__ez.dot.isDefined(e)&&e.length>0)for(;e.length>0;){var i=5;i>e.length&&(i=e.length);var t=e.splice(0,i),o=__ez.dot.getURL("/detroitchicago/grapefruit.gif")+"?orig="+(!0===__ez.template.isOrig?1:0)+"&v="+btoa(JSON.stringify(t));__ez.dot.Fire(o)}e=[]}}})}();</script><script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer></script>
+
+
+<title>Bitcoin Icon | Small &amp; Flat Iconset | paomedia</title>
+
+<!-- Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0) -->
+<script type="text/javascript" async="true">
+(function() {
+  var host = window.location.hostname;
+  var element = document.createElement('script');
+  var firstScript = document.getElementsByTagName('script')[0];
+  var url = 'https://quantcast.mgr.consensu.org'
+    .concat('/choice/', 'b9Tu_6mjKWqaw', '/', host, '/choice.js')
+  var uspTries = 0;
+  var uspTriesLimit = 3;
+  element.async = true;
+  element.type = 'text/javascript';
+  element.src = url;
+
+  firstScript.parentNode.insertBefore(element, firstScript);
+
+  function makeStub() {
+    var TCF_LOCATOR_NAME = '__tcfapiLocator';
+    var queue = [];
+    var win = window;
+    var cmpFrame;
+
+    function addFrame() {
+      var doc = win.document;
+      var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
+
+      if (!otherCMP) {
+        if (doc.body) {
+          var iframe = doc.createElement('iframe');
+
+          iframe.style.cssText = 'display:none';
+          iframe.name = TCF_LOCATOR_NAME;
+          doc.body.appendChild(iframe);
+        } else {
+          setTimeout(addFrame, 5);
+        }
+      }
+      return !otherCMP;
+    }
+
+    function tcfAPIHandler() {
+      var gdprApplies;
+      var args = arguments;
+
+      if (!args.length) {
+        return queue;
+      } else if (args[0] === 'setGdprApplies') {
+        if (
+          args.length > 3 &&
+          args[2] === 2 &&
+          typeof args[3] === 'boolean'
+        ) {
+          gdprApplies = args[3];
+          if (typeof args[2] === 'function') {
+            args[2]('set', true);
+          }
+        }
+      } else if (args[0] === 'ping') {
+        var retr = {
+          gdprApplies: gdprApplies,
+          cmpLoaded: false,
+          cmpStatus: 'stub'
+        };
+
+        if (typeof args[2] === 'function') {
+          args[2](retr);
+        }
+      } else {
+        queue.push(args);
+      }
+    }
+
+    function postMessageEventHandler(event) {
+      var msgIsString = typeof event.data === 'string';
+      var json = {};
+
+      try {
+        if (msgIsString) {
+          json = JSON.parse(event.data);
+        } else {
+          json = event.data;
+        }
+      } catch (ignore) {}
+
+      var payload = json.__tcfapiCall;
+
+      if (payload) {
+        window.__tcfapi(
+          payload.command,
+          payload.version,
+          function(retValue, success) {
+            var returnMsg = {
+              __tcfapiReturn: {
+                returnValue: retValue,
+                success: success,
+                callId: payload.callId
+              }
+            };
+            if (msgIsString) {
+              returnMsg = JSON.stringify(returnMsg);
+            }
+            event.source.postMessage(returnMsg, '*');
+          },
+          payload.parameter
+        );
+      }
+    }
+
+    while (win) {
+      try {
+        if (win.frames[TCF_LOCATOR_NAME]) {
+          cmpFrame = win;
+          break;
+        }
+      } catch (ignore) {}
+
+      if (win === window.top) {
+        break;
+      }
+      win = win.parent;
+    }
+    if (!cmpFrame) {
+      addFrame();
+      win.__tcfapi = tcfAPIHandler;
+      win.addEventListener('message', postMessageEventHandler, false);
+    }
+  };
+
+  makeStub();
+
+  var uspStubFunction = function() {
+    var arg = arguments;
+    if (typeof window.__uspapi !== uspStubFunction) {
+      setTimeout(function() {
+        if (typeof window.__uspapi !== 'undefined') {
+          window.__uspapi.apply(window.__uspapi, arg);
+        }
+      }, 500);
+    }
+  };
+
+  var checkIfUspIsReady = function() {
+    uspTries++;
+    if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
+      console.warn('USP is not accessible');
+    } else {
+      clearInterval(uspInterval);
+    }
+  };
+
+  if (typeof window.__uspapi === 'undefined') {
+    window.__uspapi = uspStubFunction;
+    var uspInterval = setInterval(checkIfUspIsReady, 6000);
+  }
+})();
+</script>
+<!-- End Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0) -->
+
+
+<meta name="keywords" content="bitcoin,crypto,litecoin,messaging,wallet,Bitcoin"/>
+<meta name="description" content="Click to download Bitcoin, Crypto, Litecoin, Messaging, Wallet icon from Small &amp; Flat Iconset by paomedia"/>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-6648331-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-6648331-1');
+</script>
+
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="icon" sizes="16x16" type="image/png" href="/favicon-16x16.png"/>
+<link rel="icon" sizes="32x32" type="image/png" href="/favicon-32x32.png"/>
+<link rel="icon" sizes="48x48" type="image/png" href="/favicon-48x48.png"/>
+<link rel="icon" sizes="128x128" type="image/png" href="/favicon-128x128.png"/>
+<link rel="icon" sizes="196x196" type="image/png" href="/favicon-196x196.png"/>
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png"/>
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png"/>
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png"/>
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png"/>
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png"/>
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png"/>
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png"/>
+<meta name="msapplication-TileColor" content="#4466ae"/>
+<meta name="msapplication-TileImage" content="/mstile-144x144.png"/>
+
+<link rel="canonical" href="https://iconarchive.com/show/small-n-flat-icons-by-paomedia/bitcoin-icon.html"/>
+<!--link rel="stylesheet" href="https://static.iconarchive.com/static/css/responsive.css" type="text/css" /-->
+<link rel="stylesheet" href="https://static.iconarchive.com/static/css/iconarchive.css" type="text/css"/>
+
+<script type="text/javascript">
+var baseurl = "/";
+var MyFileServer = "https://icons.iconarchive.com";
+var TmpTestServerIconPath = "";
+var userlogin = "0";
+var homepage = "0";
+</script>
+
+
+
+
+
+
+<script type="text/javascript">var ezouid = "1";</script><base href="https://iconarchive.com/show/small-n-flat-icons-by-paomedia/bitcoin-icon.html"><script type='text/javascript'>
+var ezoTemplate = 'old_site_gc';
+if(typeof ezouid == 'undefined')
+{
+    var ezouid = 'none';
+}
+var ezoFormfactor = '1';
+var ezo_elements_to_check = Array();
+</script><!-- START EZHEAD -->
+<script data-ezscrex="false" type='text/javascript'>
+var soc_app_id = '0';
+var did = 233319;
+var ezdomain = 'iconarchive.com';
+var ezoicSearchable = 1;
+</script>
+<!--{jquery}-->
+<!-- END EZHEAD -->
+<script data-ezscrex="false" type="text/javascript" data-cfasync="false">var _ezaq = {"ad_cache_level":0,"ad_lazyload_version":0,"ad_load_version":0,"city":"Izmir","country":"TR","days_since_last_visit":-1,"domain_id":233319,"engaged_time_visit":0,"ezcache_level":0,"ezcache_skip_code":0,"form_factor_id":1,"framework_id":1,"is_return_visitor":false,"is_sitespeed":0,"last_page_load":"","last_pageview_id":"","lt_cache_level":0,"metro_code":0,"page_ad_positions":"","page_view_count":1,"page_view_id":"8c228d47-533c-4c6b-691c-9576a6054c08","position_selection_id":0,"postal_code":"35230","pv_event_count":0,"response_size_orig":51180,"response_time_orig":468,"serverid":"3.75.87.244:11042","state":"35","t_epoch":1668029691,"template_id":126,"time_on_site_visit":0,"url":"https://iconarchive.com/show/small-n-flat-icons-by-paomedia/bitcoin-icon.html","user_id":0,"weather_precipitation":0,"weather_summary":"","weather_temperature":0,"word_count":452,"worst_bad_word_level":0};var _ezExtraQueries = "&ez_orig=1";</script>
+<script data-ezscrex='false' data-pagespeed-no-defer data-cfasync='false'>
+function create_ezolpl(pvID, rv) {
+    var d = new Date();
+    d.setTime(d.getTime() + (365*24*60*60*1000));
+    var expires = "expires="+d.toUTCString();
+    __ez.ck.setByCat("ezux_lpl_233319=" + new Date().getTime() + "|" + pvID + "|" + rv + "; " + expires, 3);
+}
+function attach_ezolpl(pvID, rv) {
+    if (document.readyState === "complete") {
+        create_ezolpl(pvID, rv);
+    }
+    if(window.attachEvent) {
+        window.attachEvent("onload", create_ezolpl, pvID, rv);
+    } else {
+        if(window.onload) {
+            var curronload = window.onload;
+            var newonload = function(evt) {
+                curronload(evt);
+                create_ezolpl(pvID, rv);
+            };
+            window.onload = newonload;
+        } else {
+            window.onload = create_ezolpl.bind(null, pvID, rv);
+        }
+    }
+}
+
+__ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", ["8c228d47-533c-4c6b-691c-9576a6054c08", "false"], false, ['/detroitchicago/boise.js'], true, false, false, false);
+</script>
+<script type="text/javascript">var _audins_dom="iconarchive_com",_audins_did=233319;__ez.queue.addFile('/detroitchicago/cmbv2.js', '/detroitchicago/cmbv2.js?gcb=195-0&cb=04-3y02-8y06-13y07-2y19-7y0b-6y0d-21y13-4y17-5y1c-4y21-3y2f-4y58-2&cmbcb=116&sj=x04x02x06x07x19x0bx0dx13x17x1cx21x2fx58&abt=BangerVersionLocationOptimization', true, [], true, false, true, false);</script>
+<script type="text/javascript" defer>__ez.queue.addFile('/detroitchicago/cmbdv2.js', '/detroitchicago/cmbdv2.js?gcb=195-0&cb=03-8y0c-6y18-5&cmbcb=116&sj=x03x0cx18&abt=BangerVersionLocationOptimization', true, ['/detroitchicago/cmbv2.js'], true, false, true, false);</script></head>
+<body>
+
+<!-- BuySellAds.com Ad Code -->
+<script type="text/javascript">
+(function(){
+  var bsa = document.createElement('script');
+     bsa.type = 'text/javascript';
+     bsa.async = true;
+     bsa.src = '//s3.buysellads.com/ac/bsa.js';
+  (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);
+})();
+</script>
+<!-- End BuySellAds.com Ad Code -->
+
+<script src="//m.servedby-buysellads.com/monetization.js" type="text/javascript"></script>
+<script>
+  (function(){
+    if(typeof _bsa !== 'undefined' && _bsa) {
+      _bsa.init('flexbar', 'CKYI6237', 'placement:wwwiconarchivecom');
+    }
+  })();
+</script>
+
+
+
+
+<div id="metanav-background">
+<div id="metanav-allcontent">
+<div id="metanav-logo"><a href="https://iconarchive.com/" rel="nofollow"><img src="https://static.iconarchive.com/static/images/ia/logo/logo.png" alt="Icon Archive - Great icons for Win, Mac &amp; Linux" width="307" height="57"/></a></div>
+<div id="metanav-search"><form action="https://iconarchive.com/search" method="get"><input type="text" name="q" value="" id="metanav-search-field"/><div id="metanav-search-submit">Search</div></form></div>
+
+<div class="clear"></div>
+
+<ul id="topnav">
+	<li><a href="https://iconarchive.com/browse.html">Browse ▼</a>
+    <div class="topnavsub-category">
+        <ul style="width:210px;">
+        <li><a href="https://iconarchive.com/alphabet-list.html">By Alphabet</a></li>
+        <li><a href="https://iconarchive.com/news.html">Newest Sets</a></li>
+        <li><a href="https://iconarchive.com/popular.html">Popular Sets</a></li>
+        <li><a href="https://iconarchive.com/svg-icons.html">SVG Vector Sets</a></li>
+        <li><a href="https://iconarchive.com/visited.html">Most visited Sets</a></li>
+        <li><a href="https://iconarchive.com/largest.html">Largest Sets</a></li>
+		<li><a href="https://iconarchive.com/highres.html">Highest Resolution</a></li>        
+        <li><a href="https://iconarchive.com/outstanding.html">Outstanding Sets</a></li>
+        <li><a href="https://iconarchive.com/randomsets.html">Random Sets</a></li>
+        <li><a href="https://iconarchive.com/random.html">Random Icons</a></li>
+        <li><a href="https://iconarchive.com/categories.html">Categories</a></li>
+        <li><a href="https://iconarchive.com/artists.html">Artists</a></li>
+        <li><a href="https://iconarchive.com/tags.html">Tags</a></li>
+        <li><a href="https://iconarchive.com/pixelart.html">Pixelart (Classic Style)</a></li>
+        <li><a href="https://iconarchive.com/commercialfree.html">License: Commercial free</a></li>
+        </ul>
+    </div>
+    </li>
+	<li><a href="https://iconarchive.com/news.html">Newest</a></li>
+	<li><a href="https://iconarchive.com/popular.html">Popular</a></li>
+	<li><a href="https://iconarchive.com/svg-icons.html">SVG icons</a></li>
+	<li><a href="https://iconarchive.com/random.html">Random</a></li>
+	<li><a href="https://iconarchive.com/categories.html">Categories ▼</a>
+    <div class="topnavsub-category">
+        <ul>
+        <li><a href="https://iconarchive.com/category/adobe-icons.html">Adobe Icons</a></li>
+        <li><a href="https://iconarchive.com/category/alphabet-icons.html">Alphabet Icons</a></li>
+        <li><a href="https://iconarchive.com/category/animals-icons.html">Animal Icons</a></li>
+        <li><a href="https://iconarchive.com/category/apple-icons.html">Apple Icons</a></li>
+        <li><a href="https://iconarchive.com/category/application-icons.html">Application Icons</a></li>
+        <li><a href="https://iconarchive.com/category/art-icons.html">Art Icons</a></li>
+        <li><a href="https://iconarchive.com/category/avatar-icons.html">Avatar Icons</a></li>
+        <li><a href="https://iconarchive.com/category/buildings-icons.html">Buildings Icons</a></li>
+        <li><a href="https://iconarchive.com/category/business-icons.html">Business Icons</a></li>
+        <li><a href="https://iconarchive.com/category/cartoon-icons.html">Cartoon Icons</a></li>
+        <li><a href="https://iconarchive.com/category/christmas-icons.html">Christmas Icons</a></li>
+        <li><a href="https://iconarchive.com/category/computer-icons.html">Computer Icons</a></li>
+        <li><a href="https://iconarchive.com/category/culture-icons.html">Culture Icons</a></li>
+        <li><a href="https://iconarchive.com/category/drive-icons.html">Drive Icons</a></li>
+        <li><a href="https://iconarchive.com/category/easter-icons.html">Easter Icons</a></li>
+        <li><a href="https://iconarchive.com/category/emo-icons.html">Emo Icons</a></li>
+        </ul>
+        <ul>
+        <li><a href="https://iconarchive.com/category/emoji-icons.html">Emoji Icons</a></li>
+        <li><a href="https://iconarchive.com/category/flag-icons.html">Flag Icons</a></li>
+        <li><a href="https://iconarchive.com/category/folder-icons.html">Folder Icons</a></li>
+        <li><a href="https://iconarchive.com/category/food-icons.html">Food Icons</a></li>
+        <li><a href="https://iconarchive.com/category/funny-icons.html">Funny Icons</a></li>
+        <li><a href="https://iconarchive.com/category/game-icons.html">Game Icons</a></li>
+        <li><a href="https://iconarchive.com/category/halloween-icons.html">Halloween Icons</a></li>
+        <li><a href="https://iconarchive.com/category/handdrawn-icons.html">Hand-Drawn Icons</a></li>
+        <li><a href="https://iconarchive.com/category/holiday-icons.html">Holiday Icons</a></li>
+        <li><a href="https://iconarchive.com/category/kid-icons.html">Kids Icons</a></li>
+        <li><a href="https://iconarchive.com/category/lifestyle-icons.html">Lifestyle Icons</a></li>
+        <li><a href="https://iconarchive.com/category/love-icons.html">Love Icons</a></li>
+        <li><a href="https://iconarchive.com/category/media-icons.html">Media Icons</a></li>
+        <li><a href="https://iconarchive.com/category/medical-icons.html">Medical Icons</a></li>
+        <li><a href="https://iconarchive.com/category/microsoft-icons.html">Microsoft Icons</a></li>
+        <li><a href="https://iconarchive.com/category/mini-icons.html">Mini Icons</a></li>
+        </ul>
+        <ul>
+        <li><a href="https://iconarchive.com/category/mobile-icons.html">Mobile Icons</a></li>
+        <li><a href="https://iconarchive.com/category/music-icons.html">Music Icons</a></li>
+        <li><a href="https://iconarchive.com/category/nature-icons.html">Nature Icons</a></li>
+        <li><a href="https://iconarchive.com/category/object-icons.html">Object Icons</a></li>
+        <li><a href="https://iconarchive.com/category/people-icons.html">People Icons</a></li>
+        <li><a href="https://iconarchive.com/category/photographic-icons.html">Photographic Icons</a></li>
+        <li><a href="https://iconarchive.com/category/places-icons.html">Places Icons</a></li>
+        <li><a href="https://iconarchive.com/category/scifi-icons.html">Sci-Fi Icons</a></li>
+        <li><a href="https://iconarchive.com/category/social-network-icons.html">Social Network Icons</a></li>
+        <li><a href="https://iconarchive.com/category/sport-icons.html">Sport Icons</a></li>
+        <li><a href="https://iconarchive.com/category/system-icons.html">System Icons</a></li>
+        <li><a href="https://iconarchive.com/category/technology-icons.html">Technology Icons</a></li>
+        <li><a href="https://iconarchive.com/category/transport-icons.html">Transport Icons</a></li>
+        <li><a href="https://iconarchive.com/category/movie-icons.html">TV &amp; Movie Icons</a></li>
+        <li><a href="https://iconarchive.com/category/vintage-icons.html">Vintage Icons</a></li>
+        </ul>
+    </div>
+    </li>
+	<li><a href="https://iconarchive.com/artists.html">Artists</a></li>
+	<li class="last"><a href="https://iconarchive.com/mydesk.html" class="red"> ♥ My Favs</a></li>
+<div class="clear"></div>
+</ul>
+
+</div> <!--metanav-allcontent-->
+</div> <!--metanav-background-->
+<!-- End of all divs -->
+<div id="allcontent">
+
+<div class="rightcol">
+
+<div class="rightcol-block-members">
+
+<h2 style="margin-top:20px;">Share this link</h2>
+<a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Ficonarchive.com%2Fshow%2Fsmall-n-flat-icons-by-paomedia%2Fbitcoin-icon.html&amp;t=Bitcoin+Icon+%7C+Small+%26+Flat+Iconset+%7C+paomedia" target="_blank"><img src="https://static.iconarchive.com/static/images/social/facebook-icon.png" width="32" height="32" title="Share on Facebook" class="opacityhover"/></a>
+<a href="https://twitter.com/home?status=https%3A%2F%2Ficonarchive.com%2Fshow%2Fsmall-n-flat-icons-by-paomedia%2Fbitcoin-icon.html" target="_blank"><img src="https://static.iconarchive.com/static/images/social/twitter-icon.png" width="32" height="32" title="Share on Twitter" class="opacityhover"/></a>
+<a href="mailto:?subject=Nice%20icon/s%20from%20IconArchive.com&amp;body=Hello,%0D%0A%0D%0AI%20recently%20discovered%20this%20or%20these%20icons%20on%20IconArchive.com:%0D%0Ahttps%3A%2F%2Ficonarchive.com%2Fshow%2Fsmall-n-flat-icons-by-paomedia%2Fbitcoin-icon.html%0D%0A%0D%0APage%20Title:%0D%0ABitcoin%20Icon%20%7C%20Small%20%26%20Flat%20Iconset%20%7C%20paomedia%0D%0A%0D%0ACheers,%0D%0A......"><img src="https://static.iconarchive.com/static/images/social/mail-icon.png" width="32" height="32" title="Send this link by eMail" class="opacityhover"/></a>
+<div style="margin-top:20px;"></div>
+
+</div>
+<div class="rightcol-block-ads">
+<h2 style="margin-top:0px;margin-bottom:5px;">Sponsored links</h2>
+
+</div><!--end rightcol-block-ads-->
+
+<script type="text/javascript"><!--
+    e9 = new Object();
+    e9.size = "300x250";
+    e9.addBlockingCategories="alcohol,dieting,gambling,tobacco,violence";
+//--></script>
+<script type="text/javascript" src="//tags.expo9.exponential.com/tags/iconarchivecom/ros/tags.js"></script>
+
+
+<!-- Ezoic - sidebar_right_middle 101 - sidebar_middle -->
+<div id="ezoic-pub-ad-placeholder-101">
+
+	<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<!-- Global Right Sidebar Responsive -->
+	<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-0713487530771755" data-ad-slot="8911544518" data-ad-format="auto" data-full-width-responsive="true"></ins>
+	<script>
+		 (adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+
+ </div>
+<!-- End Ezoic - sidebar_right_middle 101 - sidebar_middle -->
+
+
+
+
+	<br/>
+	<br/>
+
+<!-- Ezoic - sidebar_right_below 109 - sidebar_middle -->
+<div id="ezoic-pub-ad-placeholder-109">
+
+	<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<!-- Global Right Sidebar Middle Responsive -->
+	<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-0713487530771755" data-ad-slot="7737207417" data-ad-format="auto" data-full-width-responsive="true"></ins>
+	<script>
+		 (adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+
+</div>
+<!-- End Ezoic - sidebar_right_below 109 - sidebar_middle -->
+
+
+	
+</div><!--rightcol-->
+
+<div class="leftcol">
+<h3 class="tag-header">Tags</h3>
+<div class="tag" tid="433536">
+		<a href="/tag/bitcoin" class="tagedit" title="Bitcoin icons">bitcoin</a>
+		<ul>
+			<li class="view">Search tag</li>
+			<li class="up">Good (<span class="count">7</span>)</li>
+			<li class="down">Bad (<span class="count">0</span>)</li>
+			<li class="abuse">Report abuse</li>
+		</ul>
+		</div><div class="tag" tid="552543">
+		<a href="/tag/crypto" class="tagedit" title="Crypto icons">crypto</a>
+		<ul>
+			<li class="view">Search tag</li>
+			<li class="up">Good (<span class="count">1</span>)</li>
+			<li class="down">Bad (<span class="count">0</span>)</li>
+			<li class="abuse">Report abuse</li>
+		</ul>
+		</div><div class="tag" tid="538239">
+		<a href="/tag/litecoin" class="tagedit" title="Litecoin icons">litecoin</a>
+		<ul>
+			<li class="view">Search tag</li>
+			<li class="up">Good (<span class="count">1</span>)</li>
+			<li class="down">Bad (<span class="count">0</span>)</li>
+			<li class="abuse">Report abuse</li>
+		</ul>
+		</div><div class="tag" tid="559419">
+		<a href="/tag/messaging" class="tagedit" title="Messaging icons">messaging</a>
+		<ul>
+			<li class="view">Search tag</li>
+			<li class="up">Good (<span class="count">1</span>)</li>
+			<li class="down">Bad (<span class="count">0</span>)</li>
+			<li class="abuse">Report abuse</li>
+		</ul>
+		</div><div class="tag" tid="552544">
+		<a href="/tag/wallet" class="tagedit" title="Wallet icons">wallet</a>
+		<ul>
+			<li class="view">Search tag</li>
+			<li class="up">Good (<span class="count">1</span>)</li>
+			<li class="down">Bad (<span class="count">0</span>)</li>
+			<li class="abuse">Report abuse</li>
+		</ul>
+		</div><form class="tag-add" onsubmit="ajax_tagadd();return false;"><input id="tag-add-input" iconid="103349" type="text" value=""/><div id="tag-add-submit">Add Tag</div><div class="clear"></div><div class="tag-add-message"><ul><li id="tag-add-errormsg"></li><li><b>Info:</b></li><li>- Just type tag + return</li><li>- Tags should be in english</li><li>- Tags should describe what the icon shows or what the icon is commonly used for.</li></ul></div></form>
+
+<h3>Icon Rating</h3>
+
+	<div class="rating" type="i" key="103349" votes="1" value="4.00">
+	<div vote="1" class="star red100" title="Very poor"></div>
+	<div vote="2" class="star red100" title="Poor"></div>
+	<div vote="3" class="star red100" title="OK"></div>
+	<div vote="4" class="star red100" title="Good"></div>
+	<div vote="5" class="star" title="Very Good"></div>
+	<div class="rating-text tooltip-below"><span class="rating-text-content">4.00 (1 vote)</span>
+	
+	<div class="tooltipcontent" style="display:none;">
+	<div class="rating-distribution"><b>Distibution:</b><br/>
+	
+		<div style="height:0px;left:0px;" title="0 votes" id="voted1" class="voted" key="1" value="0"></div>
+		<div style="height:0px;left:13px;" title="0 votes" id="voted2" class="voted" key="2" value="0"></div>
+		<div style="height:0px;left:26px;" title="0 votes" id="voted3" class="voted" key="3" value="0"></div>
+		<div style="height:55px;left:39px;" title="1 votes" id="voted4" class="voted" key="4" value="1"></div>
+		<div style="height:0px;left:52px;" title="0 votes" id="voted5" class="voted" key="5" value="0"></div>
+	<div class="numbers"></div>
+	</div><!--rating-distribution-->
+	</div><!--tooltipcontent-->
+			
+	</div><!--toolbelow-->
+	
+	<div class="clear"></div>
+	</div>	
+		
+<h3>Stats</h3>
+<span class="greylabel">Downloads:</span> 24485
+
+<h3>Browse this Iconset</h3>
+<a href="/show/small-n-flat-icons-by-paomedia.html"><img src="https://icons.iconarchive.com/icons/paomedia/small-n-flat/icons-390.jpg" width="175"/></a>
+
+<!-- Ezoic - sidebar_left_floating_1 - sidebar_floating_1 -->
+<div id="ezoic-pub-ad-placeholder-113"> </div>
+<!-- End Ezoic - sidebar_left_floating_1 - sidebar_floating_1 -->
+
+
+</div>
+
+<div class="contentbox">
+<a name="pagination"></a>
+<h1>Bitcoin Icon</h1>
+
+<div id="icon-103349-48" class="icondetail" style="height:298px;width:285px"><div class="links"><div class="fav" title="Add to Favorites"></div><div class="detail"></div><div class="clear"></div></div><a href="/show/small-n-flat-icons-by-paomedia/bitcoin-icon.html"><img src="https://icons.iconarchive.com/icons/paomedia/small-n-flat/256/bitcoin-icon.png" style="margin-top:3px" loading="lazy" width="256" height="256" alt="Bitcoin icon" title="Bitcoin icon"/></a></div><div style="float:left;border:0px solid #dddddd;width:300px;height:270px;margin:3px 3px 3px 40px;">
+
+<!-- Ezoic -  global_top_box - under_page_title -->
+<div id="ezoic-pub-ad-placeholder-106">
+
+	<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<!-- Global Top Box 300 x 250 -->
+	<ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-0713487530771755" data-ad-slot="8448510084"></ins>
+	<script>
+		 (adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+	
+ </div>
+<!-- End Ezoic -  global_top_box - under_page_title -->
+
+
+</div>
+<div class="clear" style="height:10px;"></div>
+<b>Artist:</b> <a href="/artist/paomedia.html">paomedia</a><br/>
+
+<b>Iconset:</b> <a href="/show/small-n-flat-icons-by-paomedia.html">Small &amp; Flat Icons</a> (169 icons)<br/>
+<b>License:</b> <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank">Public Domain</a><br/><b>Commercial usage:</b> Allowed<br/><b>Readme file:</b> <a href="/icons/paomedia/small-n-flat/readme.txt" target="_blank">readme.txt</a><br/><div class="clear"></div><a class="button" href="https://iconarchive.com/download/i103349/paomedia/small-n-flat/bitcoin.svg" title="Download this icon in SVG vector format" style="background-color:#34ad59;">Download SVG</a> <a class="button" href="https://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/bitcoin-icon.png" title="Download this icon in PNG format">Download PNG</a> <a class="button" href="https://iconarchive.com/download/i103349/paomedia/small-n-flat/bitcoin.ico" title="Download this icon in ICO format">ICO</a> <a class="button" href="https://iconarchive.com/download/i103349/paomedia/small-n-flat/bitcoin.icns" title="Download this icon in ICNS format">ICNS</a><br/>
+<!-- Ezoic - under_page_title - under_page_title -->
+<div id="ezoic-pub-ad-placeholder-115"> </div>
+<!-- End Ezoic - under_page_title - under_page_title -->
+<h3 style="margin-top:25px;">Download other sizes of this icon:</h3><div class="alticon" style="height:178px;"><div style="height:128px;"><a href="https://icons.iconarchive.com/icons/paomedia/small-n-flat/128/bitcoin-icon.png"><img src="https://icons.iconarchive.com/icons/paomedia/small-n-flat/128/bitcoin-icon.png" style="margin-top:0px;" title="Bitcoin" alt="Bitcoin icon" width="128" height="128"/></a></div><div class="alticon-text">PNG File:<br/><a href="https://icons.iconarchive.com/icons/paomedia/small-n-flat/128/bitcoin-icon.png">128x128 pixel</a></div></div>
+<div class="alticon" style="height:178px;"><div style="height:128px;"><a href="https://icons.iconarchive.com/icons/paomedia/small-n-flat/96/bitcoin-icon.png"><img src="https://icons.iconarchive.com/icons/paomedia/small-n-flat/96/bitcoin-icon.png" style="margin-top:16px;" title="Bitcoin" alt="Bitcoin icon" width="96" height="96"/></a></div><div class="alticon-text">PNG File:<br/><a href="https://icons.iconarchive.com/icons/paomedia/small-n-flat/96/bitcoin-icon.png">96x96 pixel</a></div></div>
+<div class="alticon" style="height:178px;"><div style="height:128px;"><a href="https://icons.iconarchive.com/icons/paomedia/small-n-flat/72/bitcoin-icon.png"><img src="https://icons.iconarchive.com/icons/paomedia/small-n-flat/72/bitcoin-icon.png" style="margin-top:28px;" title="Bitcoin" alt="Bitcoin icon" width="72" height="72"/></a></div><div class="alticon-text">PNG File:<br/><a href="https://icons.iconarchive.com/icons/paomedia/small-n-flat/72/bitcoin-icon.png">72x72 pixel</a></div></div>
+<div class="alticon" style="height:178px;"><div style="height:128px;"><a href="https://icons.iconarchive.com/icons/paomedia/small-n-flat/64/bitcoin-icon.png"><img src="https://icons.iconarchive.com/icons/paomedia/small-n-flat/64/bitcoin-icon.png" style="margin-top:32px;" title="Bitcoin" alt="Bitcoin icon" width="64" height="64"/></a></div><div class="alticon-text">PNG File:<br/><a href="https://icons.iconarchive.com/icons/paomedia/small-n-flat/64/bitcoin-icon.png">64x64 pixel</a></div></div>
+<div class="alticon" style="height:178px;"><div style="height:128px;"><a href="https://icons.iconarchive.com/icons/paomedia/small-n-flat/48/bitcoin-icon.png"><img src="https://icons.iconarchive.com/icons/paomedia/small-n-flat/48/bitcoin-icon.png" style="margin-top:40px;" title="Bitcoin" alt="Bitcoin icon" width="48" height="48"/></a></div><div class="alticon-text">PNG:<br/><a href="https://icons.iconarchive.com/icons/paomedia/small-n-flat/48/bitcoin-icon.png">48 pixel</a></div></div>
+<div class="alticon" style="height:178px;"><div style="height:128px;"><a href="https://icons.iconarchive.com/icons/paomedia/small-n-flat/32/bitcoin-icon.png"><img src="https://icons.iconarchive.com/icons/paomedia/small-n-flat/32/bitcoin-icon.png" style="margin-top:48px;" title="Bitcoin" alt="Bitcoin icon" width="32" height="32"/></a></div><div class="alticon-text">PNG:<br/><a href="https://icons.iconarchive.com/icons/paomedia/small-n-flat/32/bitcoin-icon.png">32 pixel</a></div></div>
+<div class="alticon" style="height:178px;"><div style="height:128px;"><a href="https://icons.iconarchive.com/icons/paomedia/small-n-flat/24/bitcoin-icon.png"><img src="https://icons.iconarchive.com/icons/paomedia/small-n-flat/24/bitcoin-icon.png" style="margin-top:52px;" title="Bitcoin" alt="Bitcoin icon" width="24" height="24"/></a></div><div class="alticon-text">PNG:<br/><a href="https://icons.iconarchive.com/icons/paomedia/small-n-flat/24/bitcoin-icon.png">24 pixel</a></div></div>
+<div class="alticon" style="height:178px;"><div style="height:128px;"><a href="https://icons.iconarchive.com/icons/paomedia/small-n-flat/16/bitcoin-icon.png"><img src="https://icons.iconarchive.com/icons/paomedia/small-n-flat/16/bitcoin-icon.png" style="margin-top:56px;" title="Bitcoin" alt="Bitcoin icon" width="16" height="16"/></a></div><div class="alticon-text">PNG:<br/><a href="https://icons.iconarchive.com/icons/paomedia/small-n-flat/16/bitcoin-icon.png">16 pixel</a></div></div>
+<div class="clear"></div><div class="alticon" style="border:0px solid red;text-align:center;height:560px;float:left;padding-left:10px;padding-right:10px;"><div style="height:512px;" class="alticon-img"><a href="https://icons.iconarchive.com/icons/paomedia/small-n-flat/512/bitcoin-icon.png"><img src="https://icons.iconarchive.com/icons/paomedia/small-n-flat/512/bitcoin-icon.png" width="512" height="512" alt="Bitcoin icon" title="Bitcoin"/></a></div><div class="alticon-text">PNG File:<br/><a href="https://icons.iconarchive.com/icons/paomedia/small-n-flat/512/bitcoin-icon.png">512x512 pixel</a></div></div>
+<div class="clear"></div><h2 style="margin-top:20px;">Similar icons with these tags: <a href="/tag/bitcoin" class="taglink" title="Icon bitcoin">bitcoin</a><a href="/tag/crypto" class="taglink" title="Icon crypto">crypto</a><a href="/tag/litecoin" class="taglink" title="Icon litecoin">litecoin</a><a href="/tag/messaging" class="taglink" title="Icon messaging">messaging</a><a href="/tag/wallet" class="taglink" title="Icon wallet">wallet</a></h2>
+<div id="icon-109479-48" class="icondetail" style="height:170px;width:157px"><div class="links"><div class="fav" title="Add to Favorites"></div><div class="detail"><a href="/download/i109479/cjdowner/cryptocurrency-flat/Bitcoin-Plus-XBC.svg">SVG</a><a href="/download/i109479/cjdowner/cryptocurrency-flat/Bitcoin-Plus-XBC.ico">ICO</a><a href="/download/i109479/cjdowner/cryptocurrency-flat/Bitcoin-Plus-XBC.icns">ICNS</a><a href="https://icons.iconarchive.com/icons/cjdowner/cryptocurrency-flat/128/Bitcoin-Plus-XBC-icon.png" class="lastitem">PNG</a></div><div class="clear"></div></div><a href="/show/cryptocurrency-flat-icons-by-cjdowner/Bitcoin-Plus-XBC-icon.html"><img src="https://icons.iconarchive.com/icons/cjdowner/cryptocurrency-flat/128/Bitcoin-Plus-XBC-icon.png" style="margin-top:3px" loading="lazy" width="128" height="128" alt="Bitcoin Plus XBC icon" title="Bitcoin Plus XBC icon"/></a></div>
+<div id="icon-109476-48" class="icondetail" style="height:170px;width:157px"><div class="links"><div class="fav" title="Add to Favorites"></div><div class="detail"><a href="/download/i109476/cjdowner/cryptocurrency-flat/Bitcoin-BTC.svg">SVG</a><a href="/download/i109476/cjdowner/cryptocurrency-flat/Bitcoin-BTC.ico">ICO</a><a href="/download/i109476/cjdowner/cryptocurrency-flat/Bitcoin-BTC.icns">ICNS</a><a href="https://icons.iconarchive.com/icons/cjdowner/cryptocurrency-flat/128/Bitcoin-BTC-icon.png" class="lastitem">PNG</a></div><div class="clear"></div></div><a href="/show/cryptocurrency-flat-icons-by-cjdowner/Bitcoin-BTC-icon.html"><img src="https://icons.iconarchive.com/icons/cjdowner/cryptocurrency-flat/128/Bitcoin-BTC-icon.png" style="margin-top:3px" loading="lazy" width="128" height="128" alt="Bitcoin BTC icon" title="Bitcoin BTC icon"/></a></div>
+<div id="icon-104526-48" class="icondetail" style="height:170px;width:157px"><div class="links"><div class="fav" title="Add to Favorites"></div><div class="detail"><a href="/download/i104526/cjdowner/cryptocurrency/Bitcoin.svg">SVG</a><a href="/download/i104526/cjdowner/cryptocurrency/Bitcoin.ico">ICO</a><a href="/download/i104526/cjdowner/cryptocurrency/Bitcoin.icns">ICNS</a><a href="https://icons.iconarchive.com/icons/cjdowner/cryptocurrency/128/Bitcoin-icon.png" class="lastitem">PNG</a></div><div class="clear"></div></div><a href="/show/cryptocurrency-icons-by-cjdowner/Bitcoin-icon.html"><img src="https://icons.iconarchive.com/icons/cjdowner/cryptocurrency/128/Bitcoin-icon.png" style="margin-top:3px" loading="lazy" width="128" height="128" alt="Bitcoin icon" title="Bitcoin icon"/></a></div>
+<div id="icon-99270-48" class="icondetail" style="height:170px;width:157px"><div class="links"><div class="fav" title="Add to Favorites"></div><div class="detail"><a href="/download/i99270/froyoshark/enkel/Bitcoin.ico">ICO</a><a href="/download/i99270/froyoshark/enkel/Bitcoin.icns">ICNS</a><a href="https://icons.iconarchive.com/icons/froyoshark/enkel/128/Bitcoin-icon.png" class="lastitem">PNG</a></div><div class="clear"></div></div><a href="/show/enkel-icons-by-froyoshark/Bitcoin-icon.html"><img src="https://icons.iconarchive.com/icons/froyoshark/enkel/128/Bitcoin-icon.png" style="margin-top:3px" loading="lazy" width="128" height="128" alt="Bitcoin icon" title="Bitcoin icon"/></a></div>
+<div id="icon-98154-48" class="icondetail" style="height:170px;width:157px"><div class="links"><div class="fav" title="Add to Favorites"></div><div class="detail"><a href="/download/i98154/pauloruberto/custom-round-yosemite/Bitcoin.ico">ICO</a><a href="/download/i98154/pauloruberto/custom-round-yosemite/Bitcoin.icns">ICNS</a><a href="https://icons.iconarchive.com/icons/pauloruberto/custom-round-yosemite/128/Bitcoin-icon.png" class="lastitem">PNG</a></div><div class="clear"></div></div><a href="/show/custom-round-yosemite-icons-by-pauloruberto/Bitcoin-icon.html"><img src="https://icons.iconarchive.com/icons/pauloruberto/custom-round-yosemite/128/Bitcoin-icon.png" style="margin-top:3px" loading="lazy" width="128" height="128" alt="Bitcoin icon" title="Bitcoin icon"/></a></div>
+<div id="icon-104524-48" class="icondetail" style="height:170px;width:157px"><div class="links"><div class="fav" title="Add to Favorites"></div><div class="detail"><a href="/download/i104524/cjdowner/cryptocurrency/Bitcoin-Diamond.svg">SVG</a><a href="/download/i104524/cjdowner/cryptocurrency/Bitcoin-Diamond.ico">ICO</a><a href="/download/i104524/cjdowner/cryptocurrency/Bitcoin-Diamond.icns">ICNS</a><a href="https://icons.iconarchive.com/icons/cjdowner/cryptocurrency/128/Bitcoin-Diamond-icon.png" class="lastitem">PNG</a></div><div class="clear"></div></div><a href="/show/cryptocurrency-icons-by-cjdowner/Bitcoin-Diamond-icon.html"><img src="https://icons.iconarchive.com/icons/cjdowner/cryptocurrency/128/Bitcoin-Diamond-icon.png" style="margin-top:3px" loading="lazy" width="128" height="128" alt="Bitcoin Diamond icon" title="Bitcoin Diamond icon"/></a></div>
+<div id="icon-104525-48" class="icondetail" style="height:170px;width:157px"><div class="links"><div class="fav" title="Add to Favorites"></div><div class="detail"><a href="/download/i104525/cjdowner/cryptocurrency/Bitcoin-Plus.svg">SVG</a><a href="/download/i104525/cjdowner/cryptocurrency/Bitcoin-Plus.ico">ICO</a><a href="/download/i104525/cjdowner/cryptocurrency/Bitcoin-Plus.icns">ICNS</a><a href="https://icons.iconarchive.com/icons/cjdowner/cryptocurrency/128/Bitcoin-Plus-icon.png" class="lastitem">PNG</a></div><div class="clear"></div></div><a href="/show/cryptocurrency-icons-by-cjdowner/Bitcoin-Plus-icon.html"><img src="https://icons.iconarchive.com/icons/cjdowner/cryptocurrency/128/Bitcoin-Plus-icon.png" style="margin-top:3px" loading="lazy" width="128" height="128" alt="Bitcoin Plus icon" title="Bitcoin Plus icon"/></a></div>
+<div id="icon-109478-48" class="icondetail" style="height:170px;width:157px"><div class="links"><div class="fav" title="Add to Favorites"></div><div class="detail"><a href="/download/i109478/cjdowner/cryptocurrency-flat/Bitcoin-Diamond-BCD.svg">SVG</a><a href="/download/i109478/cjdowner/cryptocurrency-flat/Bitcoin-Diamond-BCD.ico">ICO</a><a href="/download/i109478/cjdowner/cryptocurrency-flat/Bitcoin-Diamond-BCD.icns">ICNS</a><a href="https://icons.iconarchive.com/icons/cjdowner/cryptocurrency-flat/128/Bitcoin-Diamond-BCD-icon.png" class="lastitem">PNG</a></div><div class="clear"></div></div><a href="/show/cryptocurrency-flat-icons-by-cjdowner/Bitcoin-Diamond-BCD-icon.html"><img src="https://icons.iconarchive.com/icons/cjdowner/cryptocurrency-flat/128/Bitcoin-Diamond-BCD-icon.png" style="margin-top:3px" loading="lazy" width="128" height="128" alt="Bitcoin Diamond BCD icon" title="Bitcoin Diamond BCD icon"/></a></div>
+<div id="icon-104523-48" class="icondetail" style="height:170px;width:157px"><div class="links"><div class="fav" title="Add to Favorites"></div><div class="detail"><a href="/download/i104523/cjdowner/cryptocurrency/Bitcoin-Cash.svg">SVG</a><a href="/download/i104523/cjdowner/cryptocurrency/Bitcoin-Cash.ico">ICO</a><a href="/download/i104523/cjdowner/cryptocurrency/Bitcoin-Cash.icns">ICNS</a><a href="https://icons.iconarchive.com/icons/cjdowner/cryptocurrency/128/Bitcoin-Cash-icon.png" class="lastitem">PNG</a></div><div class="clear"></div></div><a href="/show/cryptocurrency-icons-by-cjdowner/Bitcoin-Cash-icon.html"><img src="https://icons.iconarchive.com/icons/cjdowner/cryptocurrency/128/Bitcoin-Cash-icon.png" style="margin-top:3px" loading="lazy" width="128" height="128" alt="Bitcoin Cash icon" title="Bitcoin Cash icon"/></a></div>
+<div id="icon-109477-48" class="icondetail" style="height:170px;width:157px"><div class="links"><div class="fav" title="Add to Favorites"></div><div class="detail"><a href="/download/i109477/cjdowner/cryptocurrency-flat/Bitcoin-Cash-BCH.svg">SVG</a><a href="/download/i109477/cjdowner/cryptocurrency-flat/Bitcoin-Cash-BCH.ico">ICO</a><a href="/download/i109477/cjdowner/cryptocurrency-flat/Bitcoin-Cash-BCH.icns">ICNS</a><a href="https://icons.iconarchive.com/icons/cjdowner/cryptocurrency-flat/128/Bitcoin-Cash-BCH-icon.png" class="lastitem">PNG</a></div><div class="clear"></div></div><a href="/show/cryptocurrency-flat-icons-by-cjdowner/Bitcoin-Cash-BCH-icon.html"><img src="https://icons.iconarchive.com/icons/cjdowner/cryptocurrency-flat/128/Bitcoin-Cash-BCH-icon.png" style="margin-top:3px" loading="lazy" width="128" height="128" alt="Bitcoin Cash BCH icon" title="Bitcoin Cash BCH icon"/></a></div>
+<div class="clear"></div>
+<!-- Ezoic - under_page_title - under_first_paragraph -->
+<div id="ezoic-pub-ad-placeholder-114"> </div>
+<!-- End Ezoic - under_page_title - under_first_paragraph -->
+<h2>More icons from the &#34;<a href="/show/small-n-flat-icons-by-paomedia.html">Small &amp; Flat Icons</a>&#34; icon set:</h2>
+<div id="icon-103381-48" class="icondetail" style="height:170px;width:157px"><div class="links"><div class="fav" title="Add to Favorites"></div><div class="detail"><a href="/download/i103381/paomedia/small-n-flat/device-computer.ico">ICO</a><a href="/download/i103381/paomedia/small-n-flat/device-computer.icns">ICNS</a><a href="https://icons.iconarchive.com/icons/paomedia/small-n-flat/128/device-computer-icon.png" class="lastitem">PNG</a></div><div class="clear"></div></div><a href="/show/small-n-flat-icons-by-paomedia/device-computer-icon.html"><img src="https://icons.iconarchive.com/icons/paomedia/small-n-flat/128/device-computer-icon.png" style="margin-top:3px" loading="lazy" width="128" height="128" alt="Device computer icon" title="Device computer icon"/></a></div>
+<div id="icon-103439-48" class="icondetail" style="height:170px;width:157px"><div class="links"><div class="fav" title="Add to Favorites"></div><div class="detail"><a href="/download/i103439/paomedia/small-n-flat/lock.ico">ICO</a><a href="/download/i103439/paomedia/small-n-flat/lock.icns">ICNS</a><a href="https://icons.iconarchive.com/icons/paomedia/small-n-flat/128/lock-icon.png" class="lastitem">PNG</a></div><div class="clear"></div></div><a href="/show/small-n-flat-icons-by-paomedia/lock-icon.html"><img src="https://icons.iconarchive.com/icons/paomedia/small-n-flat/128/lock-icon.png" style="margin-top:3px" loading="lazy" width="128" height="128" alt="Lock icon" title="Lock icon"/></a></div>
+<div id="icon-103487-48" class="icondetail" style="height:170px;width:157px"><div class="links"><div class="fav" title="Add to Favorites"></div><div class="detail"><a href="/download/i103487/paomedia/small-n-flat/social-youtube.ico">ICO</a><a href="/download/i103487/paomedia/small-n-flat/social-youtube.icns">ICNS</a><a href="https://icons.iconarchive.com/icons/paomedia/small-n-flat/128/social-youtube-icon.png" class="lastitem">PNG</a></div><div class="clear"></div></div><a href="/show/small-n-flat-icons-by-paomedia/social-youtube-icon.html"><img src="https://icons.iconarchive.com/icons/paomedia/small-n-flat/128/social-youtube-icon.png" style="margin-top:3px" loading="lazy" width="128" height="128" alt="Social youtube icon" title="Social youtube icon"/></a></div>
+<div id="icon-103471-48" class="icondetail" style="height:170px;width:157px"><div class="links"><div class="fav" title="Add to Favorites"></div><div class="detail"><a href="/download/i103471/paomedia/small-n-flat/sign-check.ico">ICO</a><a href="/download/i103471/paomedia/small-n-flat/sign-check.icns">ICNS</a><a href="https://icons.iconarchive.com/icons/paomedia/small-n-flat/128/sign-check-icon.png" class="lastitem">PNG</a></div><div class="clear"></div></div><a href="/show/small-n-flat-icons-by-paomedia/sign-check-icon.html"><img src="https://icons.iconarchive.com/icons/paomedia/small-n-flat/128/sign-check-icon.png" style="margin-top:3px" loading="lazy" width="128" height="128" alt="Sign check icon" title="Sign check icon"/></a></div>
+<div id="icon-103469-48" class="icondetail" style="height:170px;width:157px"><div class="links"><div class="fav" title="Add to Favorites"></div><div class="detail"><a href="/download/i103469/paomedia/small-n-flat/sign-add.ico">ICO</a><a href="/download/i103469/paomedia/small-n-flat/sign-add.icns">ICNS</a><a href="https://icons.iconarchive.com/icons/paomedia/small-n-flat/128/sign-add-icon.png" class="lastitem">PNG</a></div><div class="clear"></div></div><a href="/show/small-n-flat-icons-by-paomedia/sign-add-icon.html"><img src="https://icons.iconarchive.com/icons/paomedia/small-n-flat/128/sign-add-icon.png" style="margin-top:3px" loading="lazy" width="128" height="128" alt="Sign add icon" title="Sign add icon"/></a></div>
+<div id="icon-103363-48" class="icondetail" style="height:170px;width:157px"><div class="links"><div class="fav" title="Add to Favorites"></div><div class="detail"><a href="/download/i103363/paomedia/small-n-flat/calculator.ico">ICO</a><a href="/download/i103363/paomedia/small-n-flat/calculator.icns">ICNS</a><a href="https://icons.iconarchive.com/icons/paomedia/small-n-flat/128/calculator-icon.png" class="lastitem">PNG</a></div><div class="clear"></div></div><a href="/show/small-n-flat-icons-by-paomedia/calculator-icon.html"><img src="https://icons.iconarchive.com/icons/paomedia/small-n-flat/128/calculator-icon.png" style="margin-top:3px" loading="lazy" width="128" height="128" alt="Calculator icon" title="Calculator icon"/></a></div>
+<div id="icon-103446-48" class="icondetail" style="height:170px;width:157px"><div class="links"><div class="fav" title="Add to Favorites"></div><div class="detail"><a href="/download/i103446/paomedia/small-n-flat/mixer.ico">ICO</a><a href="/download/i103446/paomedia/small-n-flat/mixer.icns">ICNS</a><a href="https://icons.iconarchive.com/icons/paomedia/small-n-flat/128/mixer-icon.png" class="lastitem">PNG</a></div><div class="clear"></div></div><a href="/show/small-n-flat-icons-by-paomedia/mixer-icon.html"><img src="https://icons.iconarchive.com/icons/paomedia/small-n-flat/128/mixer-icon.png" style="margin-top:3px" loading="lazy" width="128" height="128" alt="Mixer icon" title="Mixer icon"/></a></div>
+<div id="icon-103489-48" class="icondetail" style="height:170px;width:157px"><div class="links"><div class="fav" title="Add to Favorites"></div><div class="detail"><a href="/download/i103489/paomedia/small-n-flat/star-alt.ico">ICO</a><a href="/download/i103489/paomedia/small-n-flat/star-alt.icns">ICNS</a><a href="https://icons.iconarchive.com/icons/paomedia/small-n-flat/128/star-alt-icon.png" class="lastitem">PNG</a></div><div class="clear"></div></div><a href="/show/small-n-flat-icons-by-paomedia/star-alt-icon.html"><img src="https://icons.iconarchive.com/icons/paomedia/small-n-flat/128/star-alt-icon.png" style="margin-top:3px" loading="lazy" width="128" height="128" alt="Star alt icon" title="Star alt icon"/></a></div>
+<div id="icon-103399-48" class="icondetail" style="height:170px;width:157px"><div class="links"><div class="fav" title="Add to Favorites"></div><div class="detail"><a href="/download/i103399/paomedia/small-n-flat/file-indesign.ico">ICO</a><a href="/download/i103399/paomedia/small-n-flat/file-indesign.icns">ICNS</a><a href="https://icons.iconarchive.com/icons/paomedia/small-n-flat/128/file-indesign-icon.png" class="lastitem">PNG</a></div><div class="clear"></div></div><a href="/show/small-n-flat-icons-by-paomedia/file-indesign-icon.html"><img src="https://icons.iconarchive.com/icons/paomedia/small-n-flat/128/file-indesign-icon.png" style="margin-top:3px" loading="lazy" width="128" height="128" alt="File indesign icon" title="File indesign icon"/></a></div>
+<div id="icon-103364-48" class="icondetail" style="height:170px;width:157px"><div class="links"><div class="fav" title="Add to Favorites"></div><div class="detail"><a href="/download/i103364/paomedia/small-n-flat/calendar-clock.ico">ICO</a><a href="/download/i103364/paomedia/small-n-flat/calendar-clock.icns">ICNS</a><a href="https://icons.iconarchive.com/icons/paomedia/small-n-flat/128/calendar-clock-icon.png" class="lastitem">PNG</a></div><div class="clear"></div></div><a href="/show/small-n-flat-icons-by-paomedia/calendar-clock-icon.html"><img src="https://icons.iconarchive.com/icons/paomedia/small-n-flat/128/calendar-clock-icon.png" style="margin-top:3px" loading="lazy" width="128" height="128" alt="Calendar clock icon" title="Calendar clock icon"/></a></div>
+<div id="icon-103390-48" class="icondetail" style="height:170px;width:157px"><div class="links"><div class="fav" title="Add to Favorites"></div><div class="detail"><a href="/download/i103390/paomedia/small-n-flat/envelope-letter.ico">ICO</a><a href="/download/i103390/paomedia/small-n-flat/envelope-letter.icns">ICNS</a><a href="https://icons.iconarchive.com/icons/paomedia/small-n-flat/128/envelope-letter-icon.png" class="lastitem">PNG</a></div><div class="clear"></div></div><a href="/show/small-n-flat-icons-by-paomedia/envelope-letter-icon.html"><img src="https://icons.iconarchive.com/icons/paomedia/small-n-flat/128/envelope-letter-icon.png" style="margin-top:3px" loading="lazy" width="128" height="128" alt="Envelope letter icon" title="Envelope letter icon"/></a></div>
+<div id="icon-103405-48" class="icondetail" style="height:170px;width:157px"><div class="links"><div class="fav" title="Add to Favorites"></div><div class="detail"><a href="/download/i103405/paomedia/small-n-flat/file-powerpoint.ico">ICO</a><a href="/download/i103405/paomedia/small-n-flat/file-powerpoint.icns">ICNS</a><a href="https://icons.iconarchive.com/icons/paomedia/small-n-flat/128/file-powerpoint-icon.png" class="lastitem">PNG</a></div><div class="clear"></div></div><a href="/show/small-n-flat-icons-by-paomedia/file-powerpoint-icon.html"><img src="https://icons.iconarchive.com/icons/paomedia/small-n-flat/128/file-powerpoint-icon.png" style="margin-top:3px" loading="lazy" width="128" height="128" alt="File powerpoint icon" title="File powerpoint icon"/></a></div>
+<div id="icon-103404-48" class="icondetail" style="height:170px;width:157px"><div class="links"><div class="fav" title="Add to Favorites"></div><div class="detail"><a href="/download/i103404/paomedia/small-n-flat/file-picture.ico">ICO</a><a href="/download/i103404/paomedia/small-n-flat/file-picture.icns">ICNS</a><a href="https://icons.iconarchive.com/icons/paomedia/small-n-flat/128/file-picture-icon.png" class="lastitem">PNG</a></div><div class="clear"></div></div><a href="/show/small-n-flat-icons-by-paomedia/file-picture-icon.html"><img src="https://icons.iconarchive.com/icons/paomedia/small-n-flat/128/file-picture-icon.png" style="margin-top:3px" loading="lazy" width="128" height="128" alt="File picture icon" title="File picture icon"/></a></div>
+<div id="icon-103502-48" class="icondetail" style="height:170px;width:157px"><div class="links"><div class="fav" title="Add to Favorites"></div><div class="detail"><a href="/download/i103502/paomedia/small-n-flat/user-id.ico">ICO</a><a href="/download/i103502/paomedia/small-n-flat/user-id.icns">ICNS</a><a href="https://icons.iconarchive.com/icons/paomedia/small-n-flat/128/user-id-icon.png" class="lastitem">PNG</a></div><div class="clear"></div></div><a href="/show/small-n-flat-icons-by-paomedia/user-id-icon.html"><img src="https://icons.iconarchive.com/icons/paomedia/small-n-flat/128/user-id-icon.png" style="margin-top:3px" loading="lazy" width="128" height="128" alt="User id icon" title="User id icon"/></a></div>
+<div id="icon-103388-48" class="icondetail" style="height:170px;width:157px"><div class="links"><div class="fav" title="Add to Favorites"></div><div class="detail"><a href="/download/i103388/paomedia/small-n-flat/disc.ico">ICO</a><a href="/download/i103388/paomedia/small-n-flat/disc.icns">ICNS</a><a href="https://icons.iconarchive.com/icons/paomedia/small-n-flat/128/disc-icon.png" class="lastitem">PNG</a></div><div class="clear"></div></div><a href="/show/small-n-flat-icons-by-paomedia/disc-icon.html"><img src="https://icons.iconarchive.com/icons/paomedia/small-n-flat/128/disc-icon.png" style="margin-top:3px" loading="lazy" width="128" height="128" alt="Disc icon" title="Disc icon"/></a></div>
+<div class="clear"></div><div class="clear"></div>
+</div><!--contentbox-->
+</div> <!--column-main-->
+
+<div class="clear"></div>
+ <!--allcontent-->
+
+
+
+<div style="text-align:center;">
+
+<!-- Ezoic - bottom_of_page 108 - bottom_of_page -->
+<div id="ezoic-pub-ad-placeholder-108">
+
+	<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<!-- Global Bottom Horizonal -->
+	<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-0713487530771755" data-ad-slot="5639024662" data-ad-format="auto" data-full-width-responsive="true"></ins>
+	<script>
+		 (adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+
+</div>
+<!-- End Ezoic - bottom_of_page 108 - bottom_of_page -->
+
+</div>
+
+<br/>
+<div id="footer">
+<ul id="bottomnav">
+	<li>© 2022 IconArchive.com</li>
+	<li>| <a href="https://iconarchive.com/about.html">About</a></li>
+	<li>| <a href="https://iconarchive.com/contact.html" rel="nofollow">Contact</a></li>
+	<li>| <a href="https://iconarchive.com/privacy.html" rel="nofollow">Privacy Policy</a></li>
+	<li>| <a href="https://iconarchive.com/terms.html" rel="nofollow">Terms of Services</a></li>
+</ul>
+
+
+New: <a href="https://funny-wifi.com" target="_blank">Funny WiFi Names</a>
+
+
+
+
+
+
+
+</div>
+
+
+<div class="flyingheart"></div>
+<div id="metanav-favbar">
+	<div id="metanav-favbar-toggle" title="Open / Close FavBar"></div>
+	<div class="metanav-favbar-arrow" title="Show My Favorites"><a href="/mydesk.html"></a></div>
+	<div class="metanav-favbar-content">
+    	<ul class="metanav-favbar-list"></ul>
+	</div>
+</div>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+<script type="text/javascript" src="/static/js/ia/jquery.plugins.js"></script>
+<script type="text/javascript" src="/static/js/ia/main.min.js"></script>
+
+<script type='text/javascript' style='display:none;' async>
+</script>
+
+<script type="text/javascript" data-cfasync="false"></script></body></html>
