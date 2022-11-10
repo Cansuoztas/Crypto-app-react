@@ -1,0 +1,54 @@
+h1{
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+       cursor: pointer; 
+       background-color: rgba(0, 0, 0, 0.089);
+}
+.card:hover{
+    background-color: rgba(0, 0, 0, 0.514);
+    transform: scale(0.95);
+
+
+   }
+   button{
+    cursor: pointer;
+
+   }
+   button:hover{
+    transform: scale(0.90);
+   }
+   
+   .light{
+     /* background-color: aquamarine; */
+     color: black;
+     position: relative;
+   }
+   .dark{
+     background-color: rgb(41, 38, 38);
+     color: white;
+     position: relative;
+   
+   }
+   .darkbtn{
+     background-color: rgb(41, 38, 38);
+     color: white;
+     padding: 0.5rem;
+     border-radius: 10px;
+     position: absolute;
+     top: 3rem;
+     right: 2rem;
+   
+   }
+   
+   .lightbtn{
+     background-color: white;
+     color: black;
+     padding: 0.5rem;
+     border-radius: 10px;
+     position: absolute;
+     top: 3rem;
+     right: 2rem;
+   }
