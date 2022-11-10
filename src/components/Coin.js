@@ -37,25 +37,30 @@ const Coin = () => {
   //     getApi();
   //   }, 10000);
   console.log(toggle);
-  
+ 
   return (
 
-    <div className={toggle ? "dark" : "light"} >
+    <div className= {toggle ? "dark" : "light"} >
         
-      <form   onSubmit={handleSearch}>
-         <h1 className="fs-1 fw-bold" > Crypto APP </h1>
+      <form   onSubmit={handleSearch} style={{backgroundColor:"rgba(0, 0, 0, 0.553)"}}>
+         <h1 className="fs-1 fw-bold" style={{fontSize:"3rem" ,textAlign:"center"}}> Crypto APP </h1>
         <input
           type="search"
           value={text}
           onChange={(e) => setText(e.target.value)}
           style={{
+            backgroundColor:"rgba(241, 237, 233, 0.884)",
+            marginTop:"auto",
             borderRadius:"10px",
-            padding:"1rem 2rem"
+            padding:"1rem 2rem",
+            fontWeight:"bold",
+            margin:"1rem",
+           
           }}
         />
      
-        <button className="btn btn-danger p-3" type="submit" style={{  borderRadius:"10px",
-            padding:"1rem 2rem"}}>Search</button>
+        <button className=" btn btn-danger p-3" type="submit" style={{  borderRadius:"10px",
+            padding:"1rem 2rem",backgroundColor:"rgba(228, 29, 29, 0.911)",fontWeight:"bold",fontSize:"13px"}}>Search</button>
             <div>
         <button className={toggle ? "darkbtn" : "lightbtn"} onClick={()=>setToggle(!toggle)}>{toggle ? "Light":"Dark"  }</button>
         </div>
@@ -67,6 +72,7 @@ const Coin = () => {
           justifyContent: "center",
           flexWrap: "wrap",
           gap: "2rem",
+          
         }}
       >
         <Main data={filtredSearch} key={filtredSearch.id} />
