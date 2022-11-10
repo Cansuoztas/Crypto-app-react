@@ -1,10 +1,11 @@
-import Main from "../src/components/Main"
+import Coin from "../src/components/Coin"
 function App() {
   return (
-    <div className="App">
-   <Main/>
+    <div >
+     <Coin/>
     </div>
   );
+
 }
 
 export default App;
