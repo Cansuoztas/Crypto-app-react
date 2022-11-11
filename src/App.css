@@ -44,18 +44,20 @@ body{
      padding: 0.5rem;
      border-radius: 60%;
      position: absolute;
-
+     font-size: 1.5rem;
      top: 3rem;
      right: 2rem;
    
    }
    
    .lightbtn{
+
      background-color: white;
      color: black;
      padding: 0.5rem;
      border-radius: 60%;
      position: absolute;
+     font-size: 1.5rem;
      top: 3rem;
      right: 2rem;
    }
