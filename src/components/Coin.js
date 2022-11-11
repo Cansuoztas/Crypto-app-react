@@ -61,7 +61,7 @@ const Coin = () => {
         <button className=" btn btn-danger p-3" type="submit" style={{  borderRadius:"10px",
             padding:"1rem 2rem",backgroundColor:"rgba(228, 29, 29, 0.911)",fontWeight:"bold",fontSize:"13px"}}>Search</button>
             <div>
-        <button className={toggle ? "darkbtn" : "lightbtn"} onClick={()=>setToggle(!toggle)}>{toggle ? "Light":"Dark"  }</button>
+        <button className={toggle ? "darkbtn" : "lightbtn"} onClick={()=>setToggle(!toggle)}>{toggle ? "🌞":"🌙"  }</button>
         </div>
       </form>
       <div className="d-flex  justify-content-center align-items-center gap-2 flex-wrap "
