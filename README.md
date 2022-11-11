@@ -1,1 +1,1 @@
-[Crypto-app-react](https://main--crypto-app-react-a34dbe.netlify.app/)
+[Crypto-app-react](https://crypto-app-react-a34dbe.netlify.app/)
