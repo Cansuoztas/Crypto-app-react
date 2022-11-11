@@ -33,9 +33,7 @@ const Coin = () => {
       item.name.toLowerCase().includes(search.toLowerCase())
     );
   }, [coin, search]);
-  //   setInterval(() => {
-  //     getApi();
-  //   }, 10000);
+  
   console.log(toggle);
  
   return (
@@ -46,6 +44,7 @@ const Coin = () => {
          <h1 className="fs-1 fw-bold" style={{fontSize:"3rem" ,textAlign:"center"}}> Crypto APP </h1>
         <input
           type="search"
+          placeholder='Provide the coin name'
           value={text}
           onChange={(e) => setText(e.target.value)}
           style={{
